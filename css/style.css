@@ -1,0 +1,1380 @@
+/* Default CSS */
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  body {
+    font-size: 14px;
+    background: #001f2e;
+    color: #fff;
+    overflow-x: hidden;
+    margin: 0 auto;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    font-family: 'Cerebri Sans';
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  /* fonts */
+  
+   @font-face {
+    font-family: 'Cerebri Sans';
+    src: url(../fonts/CerebriSans-Regular.ttf);
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Cerebri Sans Light';
+    src: url(../fonts/CerebriSans-Light.ttf);
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  } 
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  p{
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;	
+  }
+  a{
+      text-decoration: none;
+      outline: none;
+      border: none;
+      font-weight: 500;
+      -webkit-transition: color 350ms ease-in-out;
+      -moz-transition: color 350ms ease-in-out;
+      -ms-transition: color 350ms ease-in-out;
+      -o-transition: color 350ms ease-in-out;
+      transition: color 350ms ease-in-out;
+  }
+  a:focus,
+  a:hover{
+      text-decoration: none;
+      outline: none;
+      
+  }
+  ul, ol{
+    margin: 0px;
+    padding: 0px;
+  }
+  li{
+    list-style: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    font-weight: 400; 
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.575rem 0.75rem;
+  }
+
+  .btn:focus {
+    box-shadow: none;
+  }
+  button:focus {
+    outline: 1px dotted;
+    outline: none;
+}
+  .page-site {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+}
+
+
+/* Homepage Css Start */
+
+.site-header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 111;
+    padding: 20px 80px;
+}
+.site-header .navbar-brand {
+    width: 150px;
+}
+
+
+.profile-dropdown {
+    position: absolute;
+    right: -20px;
+    top: 60px;
+    width: 260px;
+    background: #fff;
+    z-index: 999;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 30%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    display: none;
+}
+.profile-dropdown .profile-name {
+    display: flex;
+    align-items: center;
+}
+.profile-dropdown .profile-name img {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: 0 !important;
+}
+.profile-dropdown .profile-name .profile-info {
+    padding-left: 14px;
+}
+.profile-dropdown .profile-name h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #0474ba;
+}
+.profile-info span {
+    color: #000;
+}
+.sign-out-btn {
+    border-top: 1px solid #d3d3d3;
+    margin-top: 15px;
+    padding: 15px 0px 6px;
+}
+.sign-out-btn a {
+  color: #212121;
+  font-size: 15px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.sign-out-btn a i {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.site-header .dropdown-menu {
+    min-width: 160px;
+    background: rgba(255,255,255, 0.3);
+    font-family: 'Cerebri Sans Light';
+    color: #fff;
+    border-radius: 0;
+}
+
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+ } */
+
+.site-header .dropdown-menu .dropdown-item {
+    font-family: 'Cerebri Sans Light';
+    color: #fff;
+    font-size: 12px; 
+    letter-spacing: 0.20em;
+    padding: 0 20px;
+}
+
+.site-header .dropdown-divider {
+    border-top: 1px solid rgba(255,255,255, 0.3);;
+}
+
+.site-header .dropdown-item:hover, 
+.site-header .dropdown-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.site-header .navbar-expand-lg .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 14px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-family: 'Cerebri Sans Light';
+}
+
+.profile-inline {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.profile-inline .number {
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    letter-spacing: 0.2em;
+    text-decoration-line: underline;
+} 
+.profile-inline .profile-user img {
+    margin-left: 40px;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.banner-section {
+    position: relative;
+    width: 100%;
+    background: url(../img/home/home-banner.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 1;
+}
+
+.profile-user .fas {
+    color: #fff;
+    font-size: 14PX;
+    font-weight: 600;
+    padding-left: 2px;
+}
+
+.banner-caption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 800px;
+    color: #fff;
+    text-align: center;
+}
+.banner-caption h1 {
+    font-size: 120px;
+    line-height: 130px;
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+.banner-caption p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #fff;
+    font-family: 'Cerebri Sans Light';
+}
+.scroll-down {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -60px);
+}
+.scroll-down h4 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 3px;
+    font-family: 'Cerebri Sans Light';
+}
+.scroll-down h4:after {
+    content: '';
+    position: absolute;
+    background: #00B2E2;
+    height: 100px;
+    width: 1px;
+    left: 50%;
+    top: 30px;
+}
+.resimarket_works-section {
+    position: relative;
+    padding: 140px 0 60px;
+}
+
+.section-header h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+}
+.section-header p {
+    font-size: 17px;
+    line-height: 28px;
+    color: #fff;
+}
+.resimarket_works-steps {
+    position: relative;
+    text-align: center;
+    padding: 50px 60px;
+    color: #fff;
+}
+.steps-icon-center {
+    position: relative;
+}
+
+.steps-icon-center:after {
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../img/home/Vector1.svg);
+    width: 184px;
+    height: 100%;
+    right: 210px;
+    top: 30px;
+    background-repeat: no-repeat;
+}
+
+.steps-icon-center:before {
+    content: '';
+    position: absolute;
+    display: block;
+    background: url(../img/home/Vector2.svg);
+    width: 184px;
+    height: 100%;
+    left: 210px;
+    top: 30px;
+    background-repeat: no-repeat; 
+}
+.steps-icon img,
+.steps-icon-center img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.steps-content {
+    margin-top: 30px;
+}
+
+.steps-content h4 {
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    line-height: 26px;
+}
+.steps-content p {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Cerebri Sans Light';
+    color:rgba(255,255,255, 0.7);
+
+}
+.our_exclusive-section {
+    position: relative;
+    padding: 40px 0;
+}
+
+.navbar-nav .nav-link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 5px;
+    width: 0;
+    position: relative;
+    bottom: 0px;
+    background: 0 0;
+    -webkit-transition: width .2s ease,background-color .2s ease;
+    transition: width .2s ease,background-color .2s ease;
+}
+
+.navbar-nav .nav-item:hover 
+.nav-link:after {
+    width: 5px;
+    height: 5px;
+    background:#00b2e2;
+    color: #00b2e2;
+    border-radius: 100%;
+}
+
+.site-header .navbar-expand-lg .navbar-nav .nav-link:hover {
+    color: #00b2e2;  
+}
+
+.our_exclusive-box {
+    position: relative;
+    background: #002e40;
+    padding: 20px;
+    max-width: 960px;
+    margin: 30px auto;
+}
+
+.project_content-box {
+    position: relative;
+    padding: 25px 10px 0 0px;
+}
+.project_content-box h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFF;
+    padding-bottom: 0px;
+}
+
+.get_project-btn {
+    margin: 30px 0;
+}
+.get_project-btn .get_btn {
+    background: #00B2E2;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding: 15px 40px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-transform: uppercase;
+}
+.our_exclusive-box.our_exclusive-box-odd {
+    background: #193543;
+}
+.project_content-box-details {
+    margin: 20px 0 0;
+}
+.project_content-box-details h6 {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 22px;
+    padding-bottom: 5px;
+}
+
+.project_content-box-details p {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Cerebri Sans Light';
+    color: rgba(255,255,255, 0.7);
+    padding-bottom: 15px;
+    text-align: justify;
+}
+
+.our_technology-section {
+    position: relative;
+    padding: 40px 0;
+}
+
+.our_technology-section_inner {
+    position: relative;
+    max-width: 960px;
+    margin: 40px auto;
+}
+
+.our_technology-boxdesign {
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);
+    background: #334c58;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px;
+    height: 250px;
+}
+
+.tech-icon img {
+    max-width: 120px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.our_technology-boxdesign h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.our_technology-boxdesign .arrow {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.our_parter-section {
+    position: relative;
+    padding: 40px 0 80px;
+}
+
+.our_parter-section-inner {
+    position: relative;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+.our_parter-images {
+    background: #193543;
+    width: 100%;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our_parter-right-content {
+    position: relative;
+    padding-top: 40px;
+}
+.our_parter-right-content h4 {
+    font-size: 18px;
+    line-height: 24px;
+    padding-bottom: 15px;
+}
+.our_parter-right-content p {
+font-size: 14px;
+line-height: 20px;
+font-family: 'Cerebri Sans Light';
+color: rgba(255,255,255, 0.7);
+padding-bottom: 15px;
+text-align: justify;
+}
+
+.site-footer {
+    background: url(../img/home/footer-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 100px 0;
+}
+
+.site-footer-box {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.footer-logo {
+    width: 150px;
+    margin: 0 auto;
+}
+.footer-list {
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer-list:after {
+    content: '';
+    position: absolute;
+    background: rgba(255,255,255, 0.2);
+    height: 1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-list li {
+    display: inline-block;
+    padding: 0px 40px;
+}
+
+.footer-list li a {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Cerebri Sans Light';
+}
+
+.footer-list li a:hover {
+    color: #00B2E2;
+}
+.bottom-footer {
+    padding-top: 40px;
+    position: relative;
+}
+.copyright p {
+font-family: 'Cerebri Sans Light';
+}
+.copyright p a {
+    color: #00B2E2;
+}
+.social-media {
+    float: right;
+}
+.social-media li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.social-media li a i {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background: #1c3641;
+    color: #fff;
+    font-size: 14px;
+}
+.social-media li a i:hover {
+    background: #00B2E2;
+    color: #000;
+}
+
+/* About page css start */
+
+.page-header {
+   background: url(../img/home/page-header.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   position: relative;
+   padding: 120px 0;
+}
+
+.page-heading-section {
+    position: relative;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.page-heading-section h1 {
+    font-size: 78px;
+    line-height: 80px;
+    font-weight: bold;
+    color: #fff;
+}
+.about_us-box {
+    padding: 0 20px;
+    position: relative;
+}
+.about_us-section {
+    position: relative;
+    padding: 100px 0;
+}
+.about_us-box h4 {
+    font-size: 18px;
+    color: #00B2E2;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Cerebri Sans Light';
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.about_us-box h2 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+.about_us-box p {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Cerebri Sans Light';
+    color: rgba(255,255,255, 0.7);
+    padding-bottom: 10px;
+}
+.gallery-section-main {
+    position: relative;
+    padding: 20px 140px 40px;
+    margin: 0 auto;
+}
+.our_development-section {
+    position: relative;
+    padding: 80px 0 100px;
+}
+.our_development-content h2 {
+    font-size: 52px;
+    line-height: 58px;
+    font-weight: bold;
+    padding: 40px 0;
+}
+.our_development-content p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Cerebri Sans Light';
+    color: rgba(255,255,255, 0.7);
+    padding-bottom: 20px;
+}
+.contact_us-btn a {
+    background: #00B2E2;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding: 15px 40px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    text-transform: uppercase;
+}
+.contact_us-btn {
+    position: relative;
+    padding: 40px 0 0;
+}
+
+.features_section-box h4 {
+    font-size: 42px;
+    line-height: 42px;
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+.features_section-box p {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #00B2E2;
+    font-family: 'Cerebri Sans Light';
+    padding-bottom: 15px;
+}
+
+.features_section-box .light-paragraph {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Cerebri Sans Light';
+    color: rgba(255,255,255, 0.7);
+    padding-bottom: 20px;
+    text-transform: revert;
+    text-align: justify;
+}
+.features_section-box {
+    position: relative;
+    max-width: 220px;
+    margin: 0 auto;
+}
+.features_section-main {
+    position: relative;
+    padding: 10px 0 80px;
+}
+.campaigns_sec-image img {
+    height: 480px;
+    width: 100%;
+    object-fit: contain;
+}
+/* about css end */
+
+
+/* contact page start */
+
+.contact_section-main {
+    position: relative;
+    padding: 100px 0;
+}
+
+.contact_section-address p {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #00B2E2;
+    font-family: 'Cerebri Sans Light';
+    padding-bottom: 15px;
+}
+
+.contact_section-address h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    padding-bottom: 30px;
+}
+
+.contact_section-address .light-paragraph {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Cerebri Sans Light';
+    color: rgba(255,255,255, 0.7);
+    padding-bottom: 20px;
+    text-transform: revert;
+    text-align: justify;
+}
+
+.contact_section-main-box {
+    position: relative;
+    max-width: 940px;
+    margin: 30px auto;
+}
+
+.address-box {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.address-box img {
+    margin-right: 15px;
+    max-width: 42px;
+    max-height: 42px;
+}
+
+.conatct_social {
+    position: relative;
+    padding: 20px 0;
+}
+
+.conatct_social p {
+    padding-bottom: 15px;
+}
+
+.conatct_social-list li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.conatct_social-list li a i {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    background: #1c3641;
+    color: #fff;
+    font-size: 14px;
+}
+.conatct_social-list li a i:hover {
+    background: #00B2E2;
+    color: #fff;
+}
+.contact-from {
+    padding: 32px;
+    background: #0d2a38;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.contact-from h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 34px;
+    padding-bottom: 20px;
+}
+
+.contact-from-box .form-control {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 0;
+    height: 52px;
+    padding-left: 20px;
+    color: rgba(255,255,255, 0.7);
+    box-shadow: none;
+    font-size: 14px;
+    font-weight: 100;
+}
+.from-group {
+    margin-bottom: 20px;
+}
+.contact-from-box textarea {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 0;
+    color: rgba(255,255,255, 0.7);
+    box-shadow: none;
+    padding: 15px;
+}
+
+.contact-btn a {
+    background: #00B2E2;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding: 15px 40px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    text-transform: uppercase;
+}
+
+.from-group.contact-btn {
+    margin-top: 30px;
+}
+
+.location-section {
+    position: relative;
+    padding-bottom: 100px;
+}
+
+/* contact page end */
+
+
+/* For Developers page start  */
+
+.right_partner-section {
+    position: relative;
+       padding: 60px 0 70px;
+}
+
+.what_we_bring-box p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Cerebri Sans Light';
+    color: rgba(255,255,255, 0.7);
+    padding-bottom: 15px;
+}
+.feature_statement-section {
+    position: relative;
+    padding: 80px 0 60px;
+}
+
+.what_we_offer-section h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.what_we_offer-section p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Cerebri Sans Light';
+    color: rgba(255,255,255, 0.7);
+    padding-bottom: 10px;
+    text-align: justify;
+}
+.project_sales-list h3 {
+    font-size: 22px;
+    padding-bottom: 10px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+.what_we_offer-section {
+    position: relative;
+    margin-right: 30px;
+}
+
+.project_sales-list li {
+    font-size: 14px;
+    line-height: 26px;
+    font-family: 'Cerebri Sans Light';
+    color: rgba(255,255,255, 0.7);
+    
+}
+.project_sales-list li i { 
+    color: rgba(0,178,226, 0.7);
+}
+.campaigns-section {
+    position: relative;
+    padding: 20px 0 80px;
+}
+
+.campaigns_sec-content p {
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Cerebri Sans Light';
+    color: rgba(255,255,255, 0.7);
+    padding-bottom: 15px;
+    text-align: justify;
+}
+/* For Developers page end  */
+
+/* for agents css start */
+
+.The_edge-section {
+    position: relative;
+    padding: 80px 0;
+}
+
+.what_we_bring-section.what_offer-sec {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+/* for agents css start */
+
+
+/* sign up modal */
+
+
+.signup-box .modal-dialog {
+    max-width: 1000px;
+}
+
+.signup-box .modal-content {
+    background-color: #001F2E;
+    padding: 10px;
+    border: none;
+}
+
+.modal.signup-box {
+    background: rgba(0, 31, 46, 0.7);
+}
+
+.signup-box .modal-header h1 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    line-height: 42px;
+    color: #00B2E2;
+}
+.signup-box .modal-header {
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+.signup-box .modal-header h1 span {
+    color: #fff;
+}
+
+.multi-step-first {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.multi-step-first .number {
+    background: #334c58;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.multi-step-first .number.active {
+    background: #00B2E2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.multi-step {
+    position: relative;
+    margin-right: 30px;
+    padding: 20px 0;
+}
+/* .multi-step:after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: rgba(255,255,255, 0.2);
+    right: -30px;
+    top: -16px;
+} */
+form.contact-from-box {
+    position: relative;
+    margin-top: 50px;
+}
+
+
+.question-area-first {
+    position: relative;
+    padding: 20px 0;
+}
+
+.step_number p {
+    color: rgba(255,255,255, 0.7);
+}
+
+.step_number h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 15px 0 25px;
+}
+.step_number {
+    position: relative;
+    /* padding-bottom: 40px; */
+}
+.step_number p:last-child {
+    padding-bottom: 25px;
+}
+.step_number:after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: rgba(255,255,255, 0.2);
+    bottom: 0;
+}
+
+.multi-step-first h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.question-area-second {
+    display: none;
+}
+.question-area-third {
+    display: none;
+}
+.question-area-four {
+    display: none;
+}
+.question-area-five {
+    display: none;
+}
+.question-area-six {
+    display: none;
+}
+.question-area-section-box {
+    position: relative;
+}
+.question-area-section-box:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  background: rgba(255,255,255, 0.2);
+  top: -16px;
+  left: -16px;
+}
+.custom_radio .label-custom {
+        width: 100%;
+    font-size: 22px;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.Otp-from-sec .otp-box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: rgba(255,255,255, 0.1);
+    border: none;
+    margin: 0px 10px 40px;
+    color: rgba(255,255,255, 0.7);
+    font-size: 20px;
+}
+
+.login_page-section-main {
+    position: relative;
+    padding: 0px 160px 0px;
+    background: url(../img/home/login-bg.png);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_page-right-sec .logo {
+    margin-bottom: 40px;
+}
+
+.heading h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.login-from .form-control {
+    background: rgba(255, 255, 255, 0.2);
+border: none;
+box-sizing: border-box;
+border-radius: 0;
+height: 60px;
+padding-left: 20px;
+color: rgba(255,255,255, 0.7);
+box-shadow: none;
+}
+.sign-btn {
+    background: #00B2E2;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding: 12px 40px;
+    color: #FFFFFF !important;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    text-transform: uppercase;
+    border-radius: 0;
+    margin-top: 40px;
+    height: 60px;
+    line-height: 36px;
+}
+
+.login-from .form-control::-webkit-input-placeholder { /* Webkit */
+    color: rgba(255,255,255, 1);
+}
+
+.login-from .form-control:-moz-placeholder { /* Firefox 18-4 */
+    color: rgba(255,255,255, 1);  
+}
+
+.login-from .form-control::-moz-placeholder {  /* Firefox 19+ */
+    color: rgba(255,255,255, 1);  
+}
+
+.login-from .form-control:-ms-input-placeholder {  /*  IE10+  */
+ color: rgba(255,255,255, 1);
+}
+
+/* all */
+.form-control::-webkit-input-placeholder { /* Webkit */
+       color: rgba(255,255,255, 0.7);
+  }
+  
+  .form-control:-moz-placeholder { /* Firefox 18-4 */
+       color: rgba(255,255,255, 0.7);  
+  }
+  
+  .form-control::-moz-placeholder {  /* Firefox 19+ */
+       color: rgba(255,255,255, 0.7);  
+  }
+  
+  .form-control:-ms-input-placeholder {  /*  IE10+  */
+    color: rgba(255,255,255, 0.7);
+  }
+
+  .custom-textarea::-webkit-input-placeholder { /* Webkit */
+       color: rgba(255,255,255, 0.7);
+  }
+
+  .opt-line li {
+    position: relative;
+    background:rgba(255,255,255, 0.5);
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+    margin-right: 20px;
+  }
+  ul.opt-line {
+    margin-top: 50px;
+    position: relative;
+  }
+  ul.opt-line li input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  button.close.modal-close {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    color: #fff;
+    font-size: 36px;
+    font-weight: 100;
+}
+
+.question-area-box-sec {
+  display: inline-block;
+  padding:20px;
+}
+
+/* radio btn css */
+  .custom_radio{
+     margin: 20px 0;
+  }
+  .custom_radio input[type="radio"]{
+    display: none;
+  }
+  .custom_radio input[type="radio"] + label{
+    position: relative;
+    display: inline-block;
+    padding-left: 1.5em;
+    margin-right: 2em;
+    cursor: pointer;
+    line-height: 1em;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .custom_radio input[type="radio"] + label:before,
+  .custom_radio input[type="radio"] + label:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    color: white;
+    font-family: Times;
+    border-radius: 50%;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+  }
+  .custom_radio input[type="radio"] + label:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em white;
+  }
+  .custom_radio input[type="radio"] + label:hover:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: inset 0 0 0 0.3em white, inset 0 0 0 1em #c6c6c6;
+  }
+  .custom_radio input[type="radio"]:checked + label:before {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    box-shadow: inset 0 0 0 0.2em white, inset 0 0 0 1em #00b2e2;
+  }
+  .custom_radio input[type="radio"] + label span { 
+    color: rgba(255,255,255, 0.7);
+    font-size: 12px;
+  }
+
+  .modal.thankyou-box {
+    background: rgba(0, 31, 46, 0.7);
+  }
+
+  .thankyou-box .modal-dialog {
+    max-width: 900px;
+}
+
+.thankyou-box .modal-content {
+    background: #001F2E;
+}
+
+.thankyou-box .modal-header {
+    border-bottom: none;
+}
+.contact-btn a:first-child {
+    margin-right: 15px;
+}
+
+.thank-you-box {
+    margin: 0 auto 40px;
+    text-align: center;
+    max-width: 650px;
+}
+.thank-you-box img {
+    max-width: 280px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.thank-you-box h4 {
+    font-size: 42px;
+    color: #00B2E2;
+    font-weight: bold;
+    line-height: 50px;
+    margin-bottom: 15px;
+    font-family: 'Cerebri Sans';
+}
+.thank-you-box p {
+font-size: 14px;
+line-height: 24px;
+font-family: 'Cerebri Sans Light';
+color: rgba(255,255,255, 0.7);
+}
+
+.button_thank-you-step {
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.btn.back-project {
+    background: #00B2E2;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    padding: 12px 40px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    text-transform: uppercase;
+    border-radius: 0;
+    border: 2px solid #00B2E2;
+    font-size: 14px;
+}
+
+.btn.back-project.view-btn {
+    border: 2px solid #00B2E2;
+    background: transparent;
+    color: #fff;
+    margin-left: 10PX;
+}
+
+.what_we_bring-section {
+    padding-bottom: 100px;
+    padding-top: 20px;
+}
+
+
+
+/* responsive css start */
+
+@media (max-width:1440px) {
+    .gallery-section-main {
+        position: relative;
+        padding: 10px 60px 20px;
+    }
+    .about_us-section {
+        padding: 80px 0 60px;
+    }
+}
+
+/* responsive css end */
