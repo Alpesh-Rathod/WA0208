@@ -1,0 +1,105 @@
+
+@media screen and (max-width: 1540px) {
+    .pt-120 {
+        padding-top: 100px;
+    } 
+    .pb-120 {
+        padding-bottom: 100px;
+    }
+    .home-carousel .slider-caption h2 {
+        font-size: 72px;
+        line-height: 84px;
+    }
+    .home-carousel .slider-caption p {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1440px) { 
+    .video-author a {
+        font-size: 20px;
+        padding: 16px 32px; 
+    }
+    .project--detail-card-sec .card-body {
+        width: 100%;
+        height: 380px;
+    }
+    .project--detail-card-sec .card-body ul li:not(:last-child) {
+        padding-bottom: 10px;
+    }
+    .site-footer {
+        padding: 60px 0 40px;
+    }
+    .project-home-inner-sec h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+    .why-chose .icon-with-text li {
+        margin-bottom: 20px;
+    }
+    .why-chose .icon-with-text li h4 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+    .service-card .content h4 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    .our-service .section-header.text-center {
+        margin-bottom: 60px;
+    }
+    .pt-120 {
+        padding-top: 80px;
+    } 
+    .pb-120 {
+        padding-bottom: 80px;
+    }
+    .section-header h2 {
+        font-size: 42px;
+        line-height: 44px;
+    }
+    .home-carousel .slider-caption h2 {
+        font-size: 60px;
+        line-height: 74px;
+    }
+    .site-header .navbar-expand-lg .navbar-nav .nav-link.outline-btn {
+        padding: 0.75rem 1rem;
+    }
+    .site-header .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {  
+    .service-card .icon-box {
+        max-width: 80px;
+    }
+    .service-card .icon-box img {
+        max-width: 40px;
+    }
+    .service-card .content h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .service-card .content .description p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .browse-property-box img {
+        width: 100%;
+        height: 300px;
+    }
+    .browse-property-box p {
+        font-size: 14px;    
+        line-height: 18px;
+    }
+    .browse-property-box h4 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
